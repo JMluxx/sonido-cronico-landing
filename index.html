@@ -241,6 +241,21 @@
       background-color: #333;
     }
 
+    /* Mapa */
+    .map-container {
+      width: 100%;
+      height: 400px;
+      border-radius: 12px;
+      overflow: hidden;
+      box-shadow: 0 8px 20px rgba(0,0,0,0.4);
+    }
+
+    .map-container iframe {
+      width: 100%;
+      height: 100%;
+      border: 0;
+    }
+
     /* Contacto rápido */
     .contact-bar {
       text-align: center;
@@ -331,6 +346,9 @@
         flex-direction: column;
         align-items: center;
       }
+      .map-container {
+        height: 300px;
+      }
     }
   </style>
 </head>
@@ -340,7 +358,7 @@
   <header>
     <div class="container header-content">
       <div class="logo">
-        <img src="https://i.imgur.com/3ZJzFVx.png" alt="Logo Sonido Crónico">
+        <img src="logo-sonido-cronico.png" alt="Logo Sonido Crónico">
       </div>
       <a href="#booking" class="btn">Reserva tu hora</a>
     </div>
@@ -409,6 +427,24 @@
     </div>
   </section>
 
+  <!-- Mapa de ubicación -->
+  <section class="benefits">
+    <div class="container">
+      <h2 class="section-title">¿Dónde estamos?</h2>
+      <p style="text-align: center; margin-bottom: 2rem; color: var(--text-muted);">
+        ¡Te esperamos en nuestro estudio! Ubicado en el corazón de Madrid.
+      </p>
+      <div class="map-container">
+        <iframe 
+          src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3037.915877525673!2d-3.670482984197677!3d40.45666687936073!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0xd4228b7c55a3e71%3A0x62a42686739661b8!2sCalle%20Arturo%20Soria%2C%2039%2C%20Madrid!5e0!3m2!1ses!2ses!4v1715587898765!5m2!1ses!2ses" 
+          allowfullscreen="" 
+          loading="lazy" 
+          referrerpolicy="no-referrer-when-downgrade">
+        </iframe>
+      </div>
+    </div>
+  </section>
+
   <!-- Testimonios -->
   <section class="testimonials">
     <div class="container">
@@ -435,10 +471,10 @@
     <div class="container">
       <h2 class="section-title">Nuestro estudio</h2>
       <div class="gallery">
-        <img src="https://i.imgur.com/8YmBQlK.jpg" alt="Sala de reuniones">
-        <img src="https://i.imgur.com/6qM5WnU.jpg" alt="Sala de video clips">
-        <img src="https://i.imgur.com/3ZJzFVx.png" alt="Logo Sonido Crónico">
-        <img src="https://i.imgur.com/8YmBQlK.jpg" alt="Sala de reuniones">
+        <img src="sala-reuniones.jpg" alt="Sala de reuniones">
+        <img src="sala-video.jpg" alt="Sala de video clips">
+        <img src="logo-sonido-cronico.png" alt="Logo Sonido Crónico">
+        <img src="sala-reuniones.jpg" alt="Sala de reuniones">
       </div>
     </div>
   </section>
