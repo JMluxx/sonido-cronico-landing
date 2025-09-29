@@ -3,7 +3,7 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
-  <meta name="description" content="Alquila por horas el estudio profesional Sonido Crónico. Equipamiento de alta gama, ambiente ideal y reserva online en minutos. ¡Graba como un profesional desde solo 30€ la hora!">
+  <meta name="description" content="Alquila por horas el estudio profesional Sonido Crónico. Equipamiento de gama alta, ambiente ideal y reserva online en minutos. ¡Graba como un profesional desde solo 30€ la hora!">
   <meta name="keywords" content="estudio de grabación, alquiler estudio, grabación musical, Sonido Crónico, reserva estudio, alquiler por horas, Madrid, 30 euros">
   <meta name="author" content="Sonido Crónico">
   <title>Sonido Crónico | Alquila tu hora de grabación desde 30€</title>
@@ -71,13 +71,19 @@
 
     .logo {
       height: 60px;
-      width: auto;
+      display: flex;
+      align-items: center;
     }
 
-    .logo img {
-      height: 100%;
-      width: auto;
-      max-height: 60px;
+    .logo-text {
+      font-family: 'Montserrat', sans-serif;
+      font-weight: 800;
+      font-size: 1.8rem;
+      background: linear-gradient(90deg, #8a2be2, #00c853);
+      -webkit-background-clip: text;
+      background-clip: text;
+      color: transparent;
+      letter-spacing: -0.5px;
     }
 
     /* Hero */
@@ -353,16 +359,19 @@
       .logo {
         height: 50px;
       }
+      .logo-text {
+        font-size: 1.5rem;
+      }
     }
   </style>
 </head>
 <body>
 
-  <!-- Header -->
+  <!-- Header con LOGO DE TEXTO (visible y sin imágenes rotas) -->
   <header>
     <div class="container header-content">
       <div class="logo">
-        <img src="https://placehold.co/300x80/8a2be2/ffffff?text=Sonido+Cronico" alt="Logo Sonido Crónico">
+        <div class="logo-text">Sonido Crónico</div>
       </div>
       <a href="#booking" class="btn">Reserva tu hora</a>
     </div>
@@ -470,15 +479,15 @@
     </div>
   </section>
 
-  <!-- Galería -->
+  <!-- Galería con placeholders descriptivos -->
   <section class="benefits">
     <div class="container">
       <h2 class="section-title">Nuestro estudio</h2>
       <div class="gallery">
         <img src="https://placehold.co/600x400/1a1a25/8a2be2?text=Sala+de+Reuniones" alt="Sala de reuniones">
         <img src="https://placehold.co/600x400/1a1a25/8a2be2?text=Sala+de+Video+Clips" alt="Sala de video clips">
-        <img src="https://placehold.co/300x80/8a2be2/ffffff?text=Sonido+Cronico" alt="Logo Sonido Crónico">
-        <img src="https://placehold.co/600x400/1a1a25/8a2be2?text=Sala+de+Reuniones" alt="Sala de reuniones">
+        <img src="https://placehold.co/600x400/1a1a25/00c853?text=Control+Studio" alt="Sala de control">
+        <img src="https://placehold.co/600x400/1a1a25/ff5252?text=Equipamiento" alt="Equipamiento profesional">
       </div>
     </div>
   </section>
